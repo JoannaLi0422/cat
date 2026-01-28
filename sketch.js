@@ -15,7 +15,7 @@ function setup() {
 
 function draw() {
   background(250,200,200);
-  image(catImg, mouseX, mouseY, 50, 50);
+  image(catImg, mouseX, mouseY, 100, 100);
   updateAndDrawCats();
 }
 
@@ -49,7 +49,7 @@ function createCat(){
   let cat = {
     x: random(20, windowWidth - 20),
     y: random(20, windowHeight - 20),
-    size: random(20, 75),
+    size: random(20, 100),
     lifespan: random(255, 300)
   };
   return cat;
